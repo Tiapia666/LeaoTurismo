@@ -1,0 +1,154 @@
+<!-- OBS: O site foi programado com uma certa responsividade (imperfeita), então teste em telas menores -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leão Turismo</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo vetor.png">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section>
+ <div class="background-container-masp" id="background-container"></div>
+ 
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  
+  <div class="header">
+    <span>atendimento@leaoturismo.com.br</span>
+    <span><img src="imagens/logo azul.png"></span>
+    <span>(11) 5078-8940 | (11) 99962-2308</span>
+  </div>
+
+
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a class="ativo" href="masp.html">Masp</a></li>
+      <li><a href="quemsomos.html">Quem somos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="fullscreenNav" class="overlay">
+
+    <div class="overlay-header">
+      <span>atendimento@leaoturismo.com.br</span>
+      <span>(11) 5078-8940 | (11) 99962-2308</span>
+    </div>
+    <div class="overlay-content">
+      <a href="index.html">Início</a>
+      <a href="masp.html">Masp</a>
+      <a href="quemsomos.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+</section>
+
+<section class="site-body">
+    
+ <section class="roteiro">
+    <h1>Roteiro do Pacote Principal</h1>
+
+    <div class="etapa">
+      <div class="etapa-img">
+        <img src="imagens/ponto1.jpg" alt="Ponto turístico 1">
+      </div>
+      <div class="etapa-texto">
+        <h2>Parada 1 – Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec urna ut lectus facilisis sagittis in vel tellus. Nullam rutrum odio ipsum, non sagittis ex vehicula eget.m</p>
+      </div>
+    </div>
+
+    <div class="etapa reversa">
+      <div class="etapa-img">
+        <img src="imagens/ponto2.jpg" alt="Ponto turístico 2">
+      </div>
+      <div class="etapa-texto">
+        <h2>Parada 2 – Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec urna ut lectus facilisis sagittis in vel tellus. Nullam rutrum odio ipsum, non sagittis ex vehicula eget.</p>
+      </div>
+    </div>
+
+    <div class="etapa">
+      <div class="etapa-img">
+        <img src="imagens/ponto3.jpg" alt="Ponto turístico 3">
+      </div>
+      <div class="etapa-texto">
+        <h2>Parada 3 – Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec urna ut lectus facilisis sagittis in vel tellus. Nullam rutrum odio ipsum, non sagittis ex vehicula eget.</p>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<section class="pacote-destaque">
+  <div class="pacote-container">
+    <img src="imagens/veiarada.jpg" class="pacote-img">
+    <div class="pacote-info">
+      <h2>Excursão Pro MASP MUITO FODA</h2>
+      <p>Lorem Ipsum</p>
+      <ul>
+        <li>Transporte ida e volta</li>
+        <li>Ingresso para atrações locais</li>
+      </ul>
+      <p class="preco">R$ 250,00 por pessoa</p>
+      <button class="botao-comprar"><a href="contato.html" style="text-decoration: none;color: white;">Entre em contato</a></button>
+    </div>
+  </div>
+  <p id="mensagem-compra" class="mensagem-escondida">Obrigado pela sua compra! Em breve entraremos em contato.</p>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <img src="imagens/logo vetor.png" alt="Leão Turismo Logo" class="logo-footer">
+    </div>
+
+    <div class="footer-links">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="masp.html">Masp</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p>(11) 5078-8940</p>
+      <p>(11) 99962-2308</p>
+      <p>atendimento@leaoturismo.com.br</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Redes Sociais</h3>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Av. Paulista, 2355 - Bela Vista, São Paulo - SP, 01311-300</p>
+    <p>&copy; 2025 Leão Turismo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

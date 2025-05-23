@@ -1,0 +1,139 @@
+<!-- OBS: O site foi programado com uma certa responsividade (imperfeita), então teste em telas menores -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leão Turismo</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo vetor.png">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section>
+ <div class="background-container-contact" id="background-container"></div>
+ <div class="top-center">Venha conhecer São Paulo com o Leão!</div>
+
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  
+  <div class="header">
+    <span>atendimento@leaoturismo.com.br</span>
+    <span><img src="imagens/logo azul.png"></span>
+    <span>(11) 5078-8940 | (11) 99962-2308</span>
+  </div>
+
+
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="masp.html">Masp</a></li>
+      <li><a href="quemsomos.html">Quem somos</a></li>
+      <li><a class="ativo"href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+
+<div id="fullscreenNav" class="overlay">
+
+    <div class="overlay-header">
+      <span>atendimento@leaoturismo.com.br</span>
+      <span>(11) 5078-8940 | (11) 99962-2308</span>
+    </div>
+    <div class="overlay-content">
+      <a href="index.html">Início</a>
+      <a href="masp.html">Masp</a>
+      <a href="quemsomos.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+  
+</section>
+
+<section class="site-body">
+    
+<section class="contato">
+  <h2>Fale Conosco</h2>
+
+  <div class="contato-container">
+    <form action="https://formsubmit.co/elbio.teixeira.aleixo@gmail.com" method="POST" class="form-contato">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone" required>
+      <textarea name="mensagem" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+      
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="contato-info">
+      <h3>Endereço</h3>
+      <p>Av. Paulista, 2355 - Bela Vista, São Paulo - SP, 01311-300</p>
+
+      <h3>Telefone fixo</h3>
+      <p>(11) 99962-2308</p>
+
+      <h3>Celular</h3>
+      <p>(11) 99962-2308</p>
+
+      <h3>E-mail</h3>
+      <p>atendimento@leaoturismo.com.br</p>
+    </div>
+
+    
+
+  </div>
+</section>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <img src="imagens/logo vetor.png" alt="Leão Turismo Logo" class="logo-footer">
+    </div>
+
+    <div class="footer-links">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="masp.html">Masp</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p>(11) 5078-8940</p>
+      <p>(11) 99962-2308</p>
+      <p>atendimento@leaoturismo.com.br</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Redes Sociais</h3>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Av. Paulista, 2355 - Bela Vista, São Paulo - SP, 01311-300</p>
+    <p>&copy; 2025 Leão Turismo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

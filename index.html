@@ -1,0 +1,261 @@
+<!-- OBS: O site foi programado com uma certa responsividade (imperfeita), então teste em telas menores -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leão Turismo</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo vetor.png">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section>
+ <div class="background-container" id="background-container"></div>
+
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  
+  <div class="header">
+    <span>atendimento@leaoturismo.com.br</span>
+    <span><img src="imagens/logo azul.png"></span>
+    <span>(11) 5078-8940 | (11) 99962-2308</span>
+  </div>
+
+
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a  class="ativo" href="index.html">Início</a></li>
+      <li><a href="masp.html">Masp</a></li>
+      <li><a href="quemsomos.html">Quem somos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="fullscreenNav" class="overlay">
+
+    <div class="overlay-header">
+      <span>atendimento@leaoturismo.com.br</span>
+      <span>(11) 5078-8940 | (11) 99962-2308</span>
+    </div>
+    <div class="overlay-content">
+      <a href="index.html">Início</a>
+      <a href="masp.html">Masp</a>
+      <a href="quemsomos.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+
+</section>
+
+<section class="site-body">
+
+<div>
+  Nossos pacotes
+  <hr>
+</div>
+
+<div style="margin-bottom: 50px;">
+<div class="responsive">
+  <div class="gallery" id="gallery-masp">
+    <a href="masp.html">
+      <img src="imagens/maspp.JPG">
+    </a>
+    <div class="desc">Masp</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+      <img src="imagens/ipi.jpg">
+    </a>
+    <div class="desc">Museu do Ipiranga</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+    <a target="_blank" href="#">
+      <img src="imagens/foto4.jpg">
+    </a>
+    <div class="desc">Itaú Cultural</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+    <a target="_blank" href="#">
+      <img src="imagens/farol.jpg">
+    </a>
+    <div class="desc">Farol Santander</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+    <a target="_blank" href="#">
+      <img src="imagens/paranapiacaba.webp">
+    </a>
+    <div class="desc">Paranapiacaba</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+    <a target="_blank" href="#">
+      <img src="imagens/zulai.jpeg">
+    </a>
+    <div class="desc">Templo Zu Lai</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+    <a target="_blank" href="#">
+      <img src="imagens/jardim.jpg">
+    </a>
+    <div class="desc">Jardim Botânico</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery expirado">
+    <a target="_blank" href="#">
+      <img src="imagens/theatro.webp">
+    </a>
+    <div class="desc">Theatro Municipal</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<div>
+  Depoimentos
+  <hr>
+</div>
+
+<div class="testimonials-container">
+  <div class="testimonial-column">
+    <div class="testimonial">
+      <img src="imagens/tung tung tung.jpeg" alt="Mike" class="avatar">
+      <div class="text">
+        <h3>Tung Tung  Tung Sahur</h3>
+        <p class="title">Cliente satisfeito</p>
+        <p>sahur</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-column">
+    <div class="testimonial">
+      <img src="imagens/tralalelo.webp" alt="Tralala" class="avatar">
+      <div class="text">
+        <h3>Tralalelo Tralala</h3>
+        <p class="title">Turista</p>
+        <p>tralalelo</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-column">
+    <div class="testimonial">
+      <img src="imagens/capuccina.jpg" alt="Lucas" class="avatar">
+      <div class="text">
+        <h3>Bailarina Capuccina</h3>
+        <p class="title">É</p>
+        <p>bailarina</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="quemsomos">
+  Quem somos
+  <hr>
+  <div class="leao">
+    <img src="imagens/veiarada.jpg">
+  <div class="leao-texto">
+    <p>A Leão Turismo é uma empresa especializada em passeios pelo centro de São Paulo, feita pra quem valoriza conforto, segurança e boas experiências. Nosso foco é oferecer roteiros culturais, históricos e turísticos, pensados especialmente para quem quer aproveitar a cidade de forma tranquila, sem pressa e sem preocupação.</p>
+    <p>Com uma equipe preparada e atenciosa, cuidamos de cada detalhe para que você só se preocupe em curtir, conhecer e se encantar com os pontos mais tradicionais e cheios de história de São Paulo.</p>
+    <p>Leão Turismo — descubra, viva e aproveite São Paulo com quem entende do assunto.</p>
+    <button class="saibamais"><span><a href="quemsomos.html">Saiba Mais</a></span></button>
+  </div>
+    
+  </div>
+</div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <img src="imagens/logo vetor.png" alt="Leão Turismo Logo" class="logo-footer">
+    </div>
+
+    <div class="footer-links">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="masp.html">Masp</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p>(11) 5078-8940</p>
+      <p>(11) 99962-2308</p>
+      <p>atendimento@leaoturismo.com.br</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Redes Sociais</h3>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Av. Paulista, 2355 - Bela Vista, São Paulo - SP, 01311-300</p>
+    <p>&copy; 2025 Leão Turismo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  const imagens = [
+    'imagens/maspp.JPG',
+    'imagens/estatua.JPEG',
+    'imagens/masp-interior.JPEG',
+    'imagens/casadasrosas.JPEG',
+    'imagens/fachada-casa.JPEG',
+    'imagens/casa.JPEG',
+  ];
+
+  let indiceAtual = 0;
+
+  function trocarImagemDeFundo() {
+    const container = document.getElementById('background-container');
+    container.style.backgroundImage = `url('${imagens[indiceAtual]}')`;
+
+    indiceAtual = (indiceAtual + 1) % imagens.length; 
+  }
+
+  setInterval(trocarImagemDeFundo, 10000);
+
+  trocarImagemDeFundo();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

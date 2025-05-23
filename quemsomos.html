@@ -1,0 +1,180 @@
+<!-- OBS: O site foi programado com uma certa responsividade (imperfeita), então teste em telas menores -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leão Turismo</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo vetor.png">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section>
+ <div class="background-container-quemsomos" id="background-container"></div>
+
+
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  
+  <div class="header">
+    <span>atendimento@leaoturismo.com.br</span>
+    <span><img src="imagens/logo azul.png"></span>
+    <span>(11) 5078-8940 | (11) 99962-2308</span>
+  </div>
+
+
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="masp.html">Masp</a></li>
+      <li><a class="ativo" href="quemsomos.html">Quem somos</a></li>
+      <li><a  href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="fullscreenNav" class="overlay">
+
+    <div class="overlay-header">
+      <span>atendimento@leaoturismo.com.br</span>
+      <span>(11) 5078-8940 | (11) 99962-2308</span>
+    </div>
+    <div class="overlay-content">
+      <a href="index.html">Início</a>
+      <a href="masp.html">Masp</a>
+      <a href="quemsomos.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+  
+</section>
+
+<section class="site-body">
+ <div>
+  Sobre a Leão
+  <hr>
+    <p class="main-text">A Leão Turismo é uma empresa especializada em turismo no centro de São Paulo. Nosso propósito é proporcionar experiências únicas, seguras e confortáveis para um público que valoriza cultura, história e lazer com tranquilidade.</p>
+    <p class="main-text">Com roteiros pensados especialmente para quem busca conhecer os encantos do centro paulistano, oferecemos passeios guiados, acompanhamento personalizado e todo o suporte necessário para que sua experiência seja leve, agradável e sem preocupações.</p>
+    <p class="main-text">Aqui, você viaja com conforto, segurança e a certeza de estar com uma equipe que entende do assunto. Na Leão Turismo, sua única preocupação será aproveitar cada momento.</p>
+    <p class="main-text">Venha redescobrir São Paulo com a gente!</p>
+ </div>
+</section>
+
+<section class="linha-do-tempo">
+  <h2>Nossa Jornada</h2>
+  <div class="timeline">
+    <div class="evento left">
+      <div class="conteudo">
+        <h3>2007</h3>
+        <p>lorena ipsilon</p>
+      </div>
+    </div>
+
+    <div class="evento right">
+      <div class="conteudo">
+        <h3>2012</h3>
+        <p>lorena ipsilon</p>
+      </div>
+    </div>
+
+    <div class="evento left">
+      <div class="conteudo">
+        <h3>2015</h3>
+        <p>lorena ipsilon</p>
+      </div>
+    </div>
+
+    <div class="evento right">
+      <div class="conteudo">
+        <h3>2016</h3>
+        <p>lorena ipsilon</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fundadores">
+  <h2>Nossos Fundadores</h2>
+  <div class="fundadores-container">
+    <div class="fundador">
+      <img src="imagens/evermana.png" alt="Fundador 1">
+      <h3>Elbio Teixeira</h3>
+      <p>bla bla bla blablabla bla bla bla blablabla bla bla blabla bla bla bla bla</p>
+    </div>
+    <div class="fundador">
+      <img src="imagens/evermana.png" alt="Fundador 2">
+      <h3>Benjamin Bigas</h3>
+      <p>bla bla bla blablabla bla bla bla blablabla bla bla blabla bla bla bla bla</p>
+    </div>
+    <div class="fundador">
+      <img src="imagens/evermana.png" alt="Fundador 3">
+      <h3>Hashley Leão</h3>
+      <p>bla bla bla blablabla bla bla bla blablabla bla bla blabla bla bla bla bla</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="local">
+  <h2>Onde ficamos</h2>
+  <div class="mapa">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.317936822193!2d-46.6619105!3d-23.5570221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582d46f5776d%3A0xb12e7e3f6ae17beb!2sHotel%20Ibis%20SP%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1747883553723!5m2!1spt-BR!2sbr" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <img src="imagens/logo vetor.png" alt="Leão Turismo Logo" class="logo-footer">
+    </div>
+
+    <div class="footer-links">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="masp.html">Masp</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p>(11) 5078-8940</p>
+      <p>(11) 99962-2308</p>
+      <p>atendimento@leaoturismo.com.br</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Redes Sociais</h3>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Av. Paulista, 2355 - Bela Vista, São Paulo - SP, 01311-300</p>
+    <p>&copy; 2025 Leão Turismo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
